@@ -1,0 +1,11 @@
+// Buefy framework customization based on docs here: https://buefy.org/documentation/customization
+
+// Setting custom values for Bulma/Buefy variables: https://bulma.io/documentation/customize/variables/
+$primary: #5700ff; // SDC Brand color
+$family-primary: "Sofia Pro", sans-serif;
+$sdc-background-grey: #E5E5E5;
+
+
+// Import Bulma and Buefy styles
+@import "~bulma";
+@import "~buefy/src/scss/buefy";

@@ -1,0 +1,11 @@
+{
+  "PokemonCards": {
+    "description": "Auto imported from components/pokemon-cards.vue"
+  },
+  "SiteFooter": {
+    "description": "Auto imported from components/site-footer.vue"
+  },
+  "SiteNavbar": {
+    "description": "Auto imported from components/site-navbar.vue"
+  }
+}

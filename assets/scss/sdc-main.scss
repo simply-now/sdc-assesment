@@ -1,0 +1,134 @@
+.has-background-sdc-grey {
+    background-color: $sdc-background-grey;
+}
+
+.section.sdc-section {
+    padding: 40px 20px;
+    .column{
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 0.75rem;
+    position: static;
+    width: auto;
+    }
+    h1,h2 {
+        color: #000;
+    }
+    .title {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px;
+        letter-spacing: -1px;
+        font-feature-settings: 'liga' off;
+    }
+    .subtitle {
+        font-style: normal;
+        font-weight: 900;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-feature-settings: 'liga' off;
+    }
+}
+
+.card.sdc-card {
+    box-sizing: border-box;
+    min-width: 240px;
+    min-height: 369.33px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    position: static;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card-image {
+        background-color: #E0E0E0;
+    }
+    .card-content {
+        padding: 40px 40px 0px 40px;
+        .title {
+            text-transform: capitalize;
+            margin-bottom: 12px;
+            font-weight: 900;
+            font-size: 24px;
+            line-height: 28px;
+            font-feature-settings: 'liga' off;
+        }
+        .pokemon-abilities, .pokemon-types, .pokemon-hp, .pokemon-attack, .pokemon-defense {
+            span {
+                span {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+    
+    .card-footer {
+        border: none;
+        padding: 20px 40px 40px 40px;
+        .button {
+            box-sizing: border-box;
+    
+            /* Auto layout */
+    
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 12px 24px;
+    
+            width: 122px;
+            height: 44px;
+    
+            /* Blurple */
+    
+            color: #5700ff;
+            border: 2px solid #5700FF;
+            border-radius: 22px;
+    
+            /* Inside auto layout */
+    
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+        .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined.is-hovered, .button.is-primary.is-outlined:focus, .button.is-primary.is-outlined.is-focused {
+            background-color: #5700ff;
+            border-color: #5700ff;
+            color: #fff;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section.sdc-section {
+        padding: 40px 120px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 832px), print {
+    .columns:not(.is-desktop) {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 832px), print {
+    .columns {
+        display: block;
+    }
+    columns:not(.is-desktop) {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 832px), print {
+    .columns {
+        display: flex;
+    }
+}
